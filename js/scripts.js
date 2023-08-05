@@ -74,4 +74,12 @@ $(function () {
       enableAutoReload: true, // it will reload the new image when validating attributes changes
     });
   }
+
+  // Masonry cosplay
+  $(".cosplay").masonry({
+    // options...
+    itemSelector: ".cosplay-item",
+    columnWidth: ".cosplay-sizer",
+    percentPosition: true,
+  });
 });
