@@ -20,7 +20,23 @@ $(function () {
     event.preventDefault();
   });
 
-  // slick slider
+  // Slick sliders
+  $(".slick-about").html(
+    Array(8)
+      .fill(null)
+      .map(
+        (_, i) =>
+          `
+          <img
+            src="img/slider-${i + 1}.jpeg"
+            class="img-fluid rounded d-block mx-auto"
+            style="aspect-ratio: 1/1; object-fit: cover"
+            alt="Slider image ${i + 1}"
+          />
+        `
+      )
+      .join("")
+  );
   $(".slick-about").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
