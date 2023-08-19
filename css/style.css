@@ -10419,3 +10419,12 @@ footer h5 {
     width: 96%;
   }
 }
+
+.hover-border-white {
+  border: 4px solid;
+  border-color: transparent;
+}
+
+.hover-border-white:hover {
+  border-color: white !important;
+}
